@@ -1,8 +1,8 @@
 CC = g++
 
 all:
-	"Creating .out Executable For Directory's CPP Files"
-	$(CC) Hello-World.c -o hello-world.out
+	$(CC) Hello-World.cpp 	-o hello-world.out
+	$(CC) Data-Types.cpp 	-o data-types.out
 clean:
 	rm -rf *.out
 
