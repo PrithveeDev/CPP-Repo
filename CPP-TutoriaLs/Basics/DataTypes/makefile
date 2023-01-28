@@ -1,8 +1,8 @@
 CC = g++
 
 all:
-	$(CC) Hello-World.cpp 	-o hello-world.out
-	$(CC) Data-Types.cpp 	-o data-types.out
+	$(CC) Hello-World.cpp 	-o ./bin/hello-world.out
+	$(CC) Data-Types.cpp 	-o ./bin/data-types.out
 clean:
-	rm -rf *.out
+	rm -rf ./bin/*.out
 
