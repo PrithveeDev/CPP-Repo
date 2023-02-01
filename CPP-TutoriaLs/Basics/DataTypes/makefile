@@ -1,8 +1,8 @@
 CC = g++
+all: $(patsubst %.cpp, ./bin/%.out, $(wildcard *.cpp))
 
-all:
-	$(CC) Hello-World.cpp 	-o ./bin/hello-world.out
-	$(CC) Data-Types.cpp 	-o ./bin/data-types.out
-clean:
+./bin/%.out: %.cpp 
+	$(CC) $< -o $@ 
+
+clean: 
 	rm -rf ./bin/*.out
-
